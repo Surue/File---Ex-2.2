@@ -27,7 +27,7 @@ int main() {
 	std::ifstream file;
 	file.exceptions(std::ios::failbit);
 	try {
-		file.open("../data/Data_Monster.json", std::ios::in);
+		file.open("data/Data_Monster.json", std::ios::in);
 	}
 	catch (std::ios_base::failure &fail) {
 		std::cout << "ERROR: File not found\n";
@@ -45,7 +45,7 @@ int main() {
 
 	//TEXTURE MANAGER
 	texture_manager img_mgr;
-	img_mgr.addResourceDirectory("../data");
+	img_mgr.addResourceDirectory("data");
 
 	//Read all monsters
 	MonsterManager monsterManager(window);
