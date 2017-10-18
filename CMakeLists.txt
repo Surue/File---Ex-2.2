@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.9)
 project(Exe2.2)
 
-file(GLOB_RECURSE Exe2.2_SRC src/*.cpp include/*.h)
+file(GLOB_RECURSE Exe2.2_SRC src/*.cpp include/*)
 
 include_directories(include/)
 add_executable(Exe2.2 ${Exe2.2_SRC})
